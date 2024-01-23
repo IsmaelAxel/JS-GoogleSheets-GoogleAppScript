@@ -16,16 +16,16 @@
     border-radius: 10px;
 }
 .card img{
+    object-fit: cover;
     width: 100%;
     height: 300px;
     padding: 5px;
 }
 .card h1{
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    margin: 20px 0;
 }
-.card p{
-    margin: 10px 0;
-}
+
 .card a{
     background-color: var(--colorNaranja);
     padding: 5px;

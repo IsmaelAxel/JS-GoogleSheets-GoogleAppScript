@@ -19,22 +19,13 @@ window.onload = async () => {
       const producto = document.createElement("h1");
       producto.textContent = celular.modelo;
 
-      const marca = document.createElement("p");
-      marca.textContent = `Marca: ${celular.marca}`;
-
-      const precio = document.createElement("p");
-      precio.textContent = `Precio: ${celular.precio}`;
-
       const link = document.createElement("a");
       link.textContent = "ver más"
       link.setAttribute('href', `detailProduct.html?criterioFiltro=${celular.idCelular}`)
 
-
       container.appendChild(card);
       card.appendChild(image)
       card.appendChild(producto);
-      card.appendChild(marca);
-      card.appendChild(precio)
       card.appendChild(link);
     });
 
