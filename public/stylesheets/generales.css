@@ -1,0 +1,25 @@
+:root{
+    --colorNaranja: #ed9600;
+    --colorRojos: #DA1106;
+    --colorBlanco: #ffff;
+    --colorNegro: #0000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+body{
+    background-image: url('/public/images/background.jpg');
+    max-width: 1180px;
+    margin: 0 auto;
+}
