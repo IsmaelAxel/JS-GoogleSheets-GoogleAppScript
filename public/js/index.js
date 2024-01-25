@@ -1,14 +1,15 @@
 const $ = id => document.getElementById(id);
 window.onload = async () => {
-  const app = document.getElementById("main");
+  const app = $("main");
   const container = document.createElement("div");
   container.setAttribute("class", "container");
   app.appendChild(container);
-
+  const loader = $("loader")
   try {
     const response = await fetch('https://script.google.com/macros/s/AKfycbwFe0V0kQa7AaLd0K0M5TzzWvZmkxwTX65sifVHYvwld99Korb--Pvnfw92V3yoWEPC/exec')
     const {datos} = await response.json()
     console.log(datos)
+    loader.style.display = "none"
     datos.forEach((celular) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");

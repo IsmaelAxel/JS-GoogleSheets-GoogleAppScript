@@ -1,6 +1,7 @@
 .main__index{
     background-color: var(--colorBlanco);
     padding: 10px;
+    text-align: center;
 }
 .container{
     display: flex;
@@ -14,7 +15,11 @@
     height: 450px;
     border: 5px solid var(--colorNaranja);
     border-radius: 10px;
+    transition: all 1s ease;
 }
+.card:hover {
+    box-shadow: 0px 0px 20px var(--colorNaranja);
+  }
 .card img{
     object-fit: cover;
     width: 100%;
@@ -23,13 +28,13 @@
 }
 .card h1{
     font-size: 1.5rem;
-    margin: 20px 0;
+    margin: 0 0 10px 0;
 }
 
 .card a{
     background-color: var(--colorNaranja);
     padding: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--colorBlanco);
     border-radius: 10px;
 }

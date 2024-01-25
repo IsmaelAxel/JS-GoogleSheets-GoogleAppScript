@@ -1,4 +1,5 @@
 @import './generales.css';
 @import './home.css';
 @import './header.css';
-@import './detailProduct.css'
+@import './detailProduct.css';
+@import './loader.css';

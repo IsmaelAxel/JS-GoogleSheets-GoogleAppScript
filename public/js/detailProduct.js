@@ -1,16 +1,17 @@
 const $ = id => document.getElementById(id);
 window.onload = async () => {
     let query = new URLSearchParams(location.search)
-    const appDetail = document.getElementById("mainDetail")
+    const appDetail = $("mainDetail")
     const containerDetail = document.createElement("div")
+    const loader = $("loader")
     containerDetail.setAttribute("class", "containerDetail")
     appDetail.appendChild(containerDetail)
     if(query.get('criterioFiltro')){
         try {
             const response = await fetch(`https://script.google.com/macros/s/AKfycbwFe0V0kQa7AaLd0K0M5TzzWvZmkxwTX65sifVHYvwld99Korb--Pvnfw92V3yoWEPC/exec?columnaFiltro=idCelular&criterioFiltro=${query.get('criterioFiltro')}`)
             const {datos} = await response.json()
-
             console.log(datos)
+            loader.style.display = "none"
 
             const cardDetail = document.createElement("div");
             cardDetail.setAttribute("class", "cardDetail");

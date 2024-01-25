@@ -1,11 +1,9 @@
 .main__detail{
+    text-align: center;
     width: 1180px;
     height: 550px;
     background-color: var(--colorBlanco);
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     border: 5px solid var(--colorNaranja)
 }
