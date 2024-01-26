@@ -38,3 +38,29 @@
     color: var(--colorBlanco);
     border-radius: 10px;
 }
+
+.down{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: var(--colorNaranja);
+    border-radius: 40%;
+    padding: 20px;
+}
+.down a{
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+}
+
+.up{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    background-color: var(--colorNaranja);
+    border-radius: 40%;
+    padding: 20px;
+}
+.up a{
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+}
