@@ -53,7 +53,5 @@ window.onload = async () => {
         } catch (error) {
             console.log(`Ups, en este momento no se pudo cargar este producto. Error: ${error}`)
         }
-    }else{
-
     }
 }
