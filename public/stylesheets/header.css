@@ -1,0 +1,14 @@
+.header{
+    background-color: var(--colorNaranja);
+    padding: 25px;
+    margin: 0 0 5px 0;
+    border-radius: 0 0 10px 10px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li a{
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+}
